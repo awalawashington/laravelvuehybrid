@@ -1,7 +1,12 @@
 require('./bootstrap');
 
-import {createApp} from 'vue';
+import { createApp } from 'vue';
 
-import App from './App.vue';
 
-createApp(App).mount("#app")
+let app=createApp({})
+
+app.component('example-create', require('./components/ExampleCreate').default);
+app.component('example-index', require('./components/ExampleIndex').default);
+app.component('example-edit', require('./components/ExampleEdit').default);
+
+app.mount("#app")

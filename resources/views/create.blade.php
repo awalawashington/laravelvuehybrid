@@ -11,7 +11,7 @@
     </head>
     <body class="antialiased">
        <div id="app">
-            <example-index></example-index>
+            <example-create></example-create>
        </div>
        <script src="{{asset('js/app.js')}}"></script>
     </body>
